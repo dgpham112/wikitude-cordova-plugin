@@ -333,4 +333,16 @@
 
 	/* Export a new WikitudePlugin instance */
 	var wikitudePlugin = new WikitudePlugin();
+
+  if (!window.plugins) {
+    window.plugins = {};
+  }
+	
+  if (!window.DTEST) {
+    window.DTEST = {};
+  }	
+
+  window.plugins.wikitudePlugin = wikitudePlugin;
+  window.DTEST.wikitudePlugin = wikitudePlugin;
+
 	module.exports = wikitudePlugin;
