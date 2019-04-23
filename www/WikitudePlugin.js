@@ -1,3 +1,4 @@
+var dWikitude = null;
 
 	/**
 	 * Release date: January 2, 2017
@@ -333,18 +334,8 @@
 
 	/* Export a new WikitudePlugin instance */
 	var wikitudePlugin = new WikitudePlugin();
+	dWikitude = wikitudePlugin;
 
-/*
-  if (!window.plugins) {
-    window.plugins = {};
-  }
-	
-  if (!window.DTEST) {
-    window.DTEST = {};
-  }	
 
-  window.plugins.wikitudePlugin = wikitudePlugin;
-  window.DTEST.wikitudePlugin = wikitudePlugin;
-  */
 
 	module.exports = wikitudePlugin;
